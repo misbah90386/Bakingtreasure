@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+}
+
+/* Custom premium scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF8F0;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #09090b;
+}
+::-webkit-scrollbar-thumb {
+  background: #D9B99B;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5A3825;
+}
+
+/* Utility to hide horizontal scrollbar for clean visual carousels */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Custom shapes used in our interactive cake mockup preview stage */
+.clip-path-heart {
+  clip-path: path('M12 4.419C12.448 3.33 13.52 2.5 14.88 2.5c1.782 0 3.12 1.378 3.12 3.18 0 2.21-2.18 4.21-6 7.32-3.82-3.11-6-5.11-6-7.32 0-1.802 1.338-3.18 3.12-3.18 1.36 0 2.432.83 2.88 1.919z');
+}
+
+.clip-path-hex {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.clip-path-pedestal {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 100%, 0% 100%);
+}
